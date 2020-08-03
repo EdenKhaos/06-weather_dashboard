@@ -57,7 +57,7 @@ WHEN I open the weather dashboard
 THEN I am presented with the last searched city forecast
 ```
 ## Screenshot;
-![home](public/assets/weather_dashboard.jpg)
+![home](master/assets/weather_dashboard.JPG)
 
 ## A few sources used to help guide the making of this app (google-foo)
 https://codeburst.io/how-to-display-openweathermap-api-data-in-a-jquery-datatables-a5a0a91fb62
