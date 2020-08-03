@@ -56,7 +56,7 @@ THEN I am again presented with current and future conditions for that city
 WHEN I open the weather dashboard
 THEN I am presented with the last searched city forecast
 ```
-## Screenshot;
+## Screenshot:
 ![home](master/assets/weather_dashboard.JPG)
 
 ## A few sources used to help guide the making of this app (google-foo)
