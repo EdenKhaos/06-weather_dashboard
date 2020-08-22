@@ -125,13 +125,6 @@ $("#searchCity").click(function() {
         });
         cityListButton.text(city);
         $(".list-group").append(cityListButton);
-        
-        // clear all the local storage(not working after a page refresh)
-        $('#clear').click( function() {
-        window.localStorage.clear();
-        location.reload();
-        return false;
-        });
     };
 });
 // listens for action on the history buttons(event)
@@ -139,3 +132,16 @@ $(".list-group-item").click(function() {
     city = $(this).text();
     getData();
 });
+// capitalize city name
+$("#searchCity").keypress(function () {  
+    var _val = $("#searchCity").val();  
+    var _txt = _val.charAt(0).toUpperCase() + _val.slice(1);  
+    $("#searchCity").val(_txt);
+});
+
+// clear all the local storage(not working after a page refresh)
+$('#clear').click( function() {
+    window.localStorage.clear();
+    location.reload();
+    return false;
+    });
